@@ -14,7 +14,7 @@ axiosJWT.interceptors.response.use(
       originalRequest._isRetry = true;
       try {
         await axios.post(
-          "http://134.0.116.16:5000/api/auth/refresh",
+          "http://fasfafsa.fun:5000/api/auth/refresh",
           {},
           { withCredentials: true }
         );

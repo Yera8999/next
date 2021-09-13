@@ -39,7 +39,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { username } = ctx.query;
   try {
     const res = await axios.get<ProfileProps>(
-      `http://134.0.116.16:5000/api/user/${username}`
+      `http://fasfafsa.fun:5000/api/user/${username}`
     );
     const data = await res.data;
     return {

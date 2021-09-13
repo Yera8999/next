@@ -32,13 +32,13 @@ const Home: NextPage<Props> = ({ questions }) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const res = await axios.get("http://134.0.116.16:5000/api/question");
+  const res = await axios.get("http://fasfafsa.fun:5000/api/question");
   const questions = await res.data;
 
   if (ctx.req.headers.cookie) {
     try {
       const res = await axios.get<IsLoggedInResponse>(
-        "http://134.0.116.16:5000/api/auth",
+        "http://fasfafsa.fun:5000/api/auth",
         {
           withCredentials: true,
           headers: { cookie: ctx.req.headers.cookie },

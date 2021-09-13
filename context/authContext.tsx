@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   const [id, setId] = useState(0);
   const fetch = async () => {
     try {
-      const res = await axios.get("http://134.0.116.16:5000/api/auth", {
+      const res = await axios.get("http://fasfafsa.fun:5000/api/auth", {
         withCredentials: true,
       });
       const data = await res.data;

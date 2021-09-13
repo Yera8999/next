@@ -26,7 +26,7 @@ export const SignUpComponent: React.FC = () => {
     try {
       await axios
         .post(
-          "http://134.0.116.16:5000/api/auth/sign-up",
+          "http://fasfafsa.fun:5000/api/auth/sign-up",
           { ...values },
           {
             withCredentials: true,

@@ -10,7 +10,7 @@ export const AskComponent: React.FC = () => {
   const [code, setCode] = useState<string | undefined>();
   const postQuestion = async () => {
     await axiosJWT.post(
-      "http://134.0.116.16:5000/api/question/post",
+      "http://fasfafsa.fun:5000/api/question/post",
       { question, tags, description: code },
       { withCredentials: true }
     );

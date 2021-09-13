@@ -11,7 +11,7 @@ export default function MenuAppBar() {
   const router = useRouter();
   const logoutHandler = async () => {
     await axios
-      .post("http://134.0.116.16:5000/api/auth/logout", null, {
+      .post("http://fasfafsa.fun:5000/api/auth/logout", null, {
         withCredentials: true,
       })
       .then(() => {

@@ -21,7 +21,7 @@ export default SearchUsers;
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const username = context.query.username;
   const res = await axios.get<SearchUsersProps>(
-    `http://134.0.116.16:5000/api/user/find/${username}`
+    `http://fasfafsa.fun:5000/api/user/find/${username}`
   );
   const data = res.data;
 

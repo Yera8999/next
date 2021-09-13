@@ -42,7 +42,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.query;
   try {
     const res = await axios.get(
-      `http://134.0.116.16:5000/api/question/${id}`
+      `http://fasfafsa.fun:5000/api/question/${id}`
     );
     const data = res.data;
     return {

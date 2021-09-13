@@ -21,7 +21,7 @@ export const QuestionComponent: React.FC<QuestionProps> = ({ question }) => {
   const postAnswer = () => {
     axiosJWT
       .post(
-        `http://134.0.116.16:5000/api/question/answer/${question.id}`,
+        `http://fasfafsa.fun:5000/api/question/answer/${question.id}`,
         { answer },
         { withCredentials: true }
       )
@@ -32,7 +32,7 @@ export const QuestionComponent: React.FC<QuestionProps> = ({ question }) => {
   const likeAnswerHandler = (id: string) => {
     axiosJWT
       .put(
-        `http://134.0.116.16:5000/api/question/like-answer/${question.id}`,
+        `http://fasfafsa.fun:5000/api/question/like-answer/${question.id}`,
         { answerId: id },
         { withCredentials: true }
       )
@@ -43,7 +43,7 @@ export const QuestionComponent: React.FC<QuestionProps> = ({ question }) => {
   const deleteAnswer = (id: string) => {
     axiosJWT
       .put(
-        `http://134.0.116.16:5000/api/question/delete-answer/${question.id}`,
+        `http://fasfafsa.fun:5000/api/question/delete-answer/${question.id}`,
         { answerId: id },
         { withCredentials: true }
       )
